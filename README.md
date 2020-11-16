@@ -47,7 +47,7 @@ A _theme_ is a large focus area than spans the Mozilla organization and is perti
 
 ### Initiative
 
-An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major roadmap projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.  Initiatives are gathered [here](https://github.com/taskcluster/scrum/blob/main/gen/initiatives.md).
+An _initiative_ is a collection of one or more sprints that, taken together, address one or more themes. Initiatives map to major roadmap projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single sprint if that sprint is high value and self-contained.  Initiatives are gathered [here](https://github.com/taskcluster/scrum/blob/main/gen/initiatives.md).
 
 ### Sprint
 The _sprint_ is made up of a small collection of epics, and should be resolvable without a period of 2-5 weeks. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Sprints can address one or more initiatives; all the epics in a given Sprint do not need to service the same initiative. Sprints are tracked [in Jira](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&view=detail).
@@ -68,7 +68,7 @@ We should revisit this once we have clearer examples.
 
 * Theme: Project Maintenance, User growth
 * Initiative: Fenix with Shipit
-* Milestone: Fenix with Shipit
+* Sprint: Fenix with Shipit
 * Epic: [Fenix with Shipit](https://jira.mozilla.com/browse/RELENG-6)
 * Story: [Automatically version bump](https://jira.mozilla.com/browse/RELENG-74)
 
@@ -80,7 +80,7 @@ Sometimes [Bugzilla](https://bugzilla.mozilla.org) bugs or Github issues will be
 We are using [Jira](https://jira.mozilla.com/) to manage our agile process. Jira allows for:
 * dependency tracking
 * estimate tracking
-* milestones for tracking sprint objectives
+* sprints
 * burndown charts
 
 Any issues that are purely process-based (e.g. scrum documentation) should be filed in [the scrum repo](https://github.com/mozilla-releng/scrum). Epics are represented in Jira as [specially-tagged issues](https://jira.mozilla.com/browse/RELENG-79?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC). Since they are a process abstraction to link issues together, Epic issues should be filed in the scrum repo as well.
@@ -89,7 +89,7 @@ Any issues that are purely process-based (e.g. scrum documentation) should be fi
 We have three defined roles in our agile process:
 
 ### 1. Product owner
-The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion, end the sprint early.
+The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current sprint or, at their discretion, end the sprint early.
 
 #### 1a. Epic owner
 For sprints composed of multiple, unrelated epics, a different _Product owner_ can be assigned per epic.
@@ -103,7 +103,7 @@ The _Future sprint champion_ is responsible for organizing issues in the Product
 ## Sprint process
 
 ### Planning a sprint
-During the previous sprint, one or more Future sprint champions do the work organize the issues into epics, and epics into new milestones. User stories are discussed and converted into Epics. New issues are filed or existing issues are tagged against the upcoming milestone.
+During the previous sprint, one or more Future sprint champions do the work organize the issues into epics, and epics into new sprints. User stories are discussed and converted into Epics. New issues are filed or existing issues are tagged against the upcoming sprint.
 
 Zenhub allows setting dependencies between issues. While we need to be careful to avoid having _too many_ dependencies within a given sprint to avoid blocking work, we should leverage dependencies to help reveal the critical path for sprints.
 
@@ -116,7 +116,7 @@ The Releng team uses Fibonacci-scale story points for estimation. Each team memb
 
 The first step for sprint estimation is adding up the available story points for all team members over the coming weeks to see what the maximum achievable amount of work is. Combined point estimates for milestones need to fit within that limit to be achievable and realistic.
 
-Story point estimates are made on each issue, often through consultation with other team members. Care should be taken to avoid adding too much work to a given milestone, and the issue estimates are a good tool to gauge how conservative to be.
+Story point estimates are made on each issue, often through consultation with other team members. Care should be taken to avoid adding too much work to a given sprint, and the issue estimates are a good tool to gauge how conservative to be.
 
 Some areas of the Releng code are easier to deal with than others. If the issues or epics involve modifying code in a service that is less well-known or difficult to test (e.g. auth), story point estimates should be higher by default to recognize the need for closer inspection on review.
 
