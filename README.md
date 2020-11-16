@@ -2,7 +2,7 @@
 
 This repo contains documentation and issues related to how the Releng team at Mozilla runs its agile development process.
 
-Based heavily on the [Releng team's repo](https://github.com/taskcluster/scrum).
+Based heavily on the [Taskcluster team's repo](https://github.com/taskcluster/scrum).
 
 Table of Contents
 =================
