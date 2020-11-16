@@ -1,0 +1,29 @@
+# Format is
+#
+# <initiative-id>:
+#   title: <initiative title>  # one line
+#   theme: <theme-id>                # singular or plural
+#   themes: [<theme-id>, <theme-id>] # is acceptable
+#   description: >-
+#     <initiative description> # multiline, markdown
+
+ktlo:
+  title: Keep the Lights On
+  themes: [maintenance, operations]
+  description: >-
+    Ensure all RelEng systems are working in order to keep our products
+    pipeline running.
+
+fenix-shipit:
+  title: Initiate and drive Fenix release automation through the Shipit service
+  themes: [user-growth, maintenance]
+  description: >-
+    Support Fenix in Shipit, reducing human error and time spent shepherding
+    Fenix releases.
+
+apple-silicon-Support:
+  title: Apple Silicon Support
+  themes: [user-growth, maintenance]
+  description: >-
+    Determine what is needed to support Apple Silicon build signing and
+    testing, and the timeframe it’s needed in.
