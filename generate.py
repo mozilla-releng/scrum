@@ -92,7 +92,7 @@ def write_initiatives():
     with open("gen/initiatives.md", "w") as f:
         toc = []
         body = []
-        for id, init in sorted(INITIATIVES.items()):
+        for id, init in INITIATIVES.items():
             toc.append(f'* [{init["title"]}](#{id})')
             init_body = [
                 f'## {id}',
