@@ -4,6 +4,7 @@
 #   title: <initiative title>  # one line
 #   theme: <theme-id>                # singular or plural
 #   themes: [<theme-id>, <theme-id>] # is acceptable
+#   priority: <priority>  # optional, 1-5 based on roadmap prioritization
 #   description: >-
 #     <initiative description> # multiline, markdown
 
@@ -14,6 +15,13 @@ ktlo:
     Ensure all RelEng systems are working in order to keep our products
     pipeline running.
 
+automation-needs:
+  title: Automation Needs
+  themes: [maintenance]
+  description: >-
+    Keep Firefox CI OS+hardware/cloud environments relevant and investigate
+    ways to reduce pain points.
+
 fenix-shipit:
   title: Initiate and drive Fenix release automation through the Shipit service
   themes: [user-growth, maintenance]
@@ -21,9 +29,125 @@ fenix-shipit:
     Support Fenix in Shipit, reducing human error and time spent shepherding
     Fenix releases.
 
-apple-silicon-Support:
+apple-silicon-support:
   title: Apple Silicon Support
   themes: [user-growth, maintenance]
   description: >-
     Determine what is needed to support Apple Silicon build signing and
     testing, and the timeframe it’s needed in.
+
+test-scheduling:
+  title: Test Scheduling improvements
+  themes: [cost-reduction, maintenance]
+  description: >-
+    Use smarter scheduling algorithms to reduce the number of tasks we run in
+    CI and give developers greater confidence in their try pushes.
+
+fenix-v3-signatures:
+  title: Implement Android v3 signatures and sign Fenix with them
+  themes: [maintenance]
+  description: >-
+    We should sign Fenix with both v1 and v3 signatures so that we support
+    legacy versions of Android while covering ourselves in case of a key
+    leakage.
+
+secrets-rotation:
+  title: Rotate releng secrets and share with the team
+  themes: [maintenance, operations]
+  description: >-
+    Rotate releng secrets.
+
+geckoview-android-components-shipit:
+  title: Integrate Geckoview and Android-Components in the Fenix pipeline on Shipit
+  themes: [user-growth, maintenance]
+  description: >-
+    Automate GeckoView and Android-Components releases like Fenix, reducing
+    cross-team interactions and friction.
+
+task-efficiencies:
+  title: Reduce wasted compute and idle time in our CI infrastructure
+  themes: [cost-reduction]
+  description: >-
+    Reduce test frequencies, wasted time in tasks, and idle time in our CI
+    infrastructure.
+
+activedata-maintenance:
+  title: ActiveData Maintenance
+  themes: [maintenance]
+  description: >-
+    Keep ActiveData running, until we find alternate solutions.
+
+right-size-instances:
+  title: Right-size cloud instances
+  themes: [cost-reduction]
+  description: >-
+    Create system to identify tasks running on oversized instances by
+    collecting resource usage data into our data analytics platform (BigQuery)
+
+balrog-metadata:
+  title: Balrog Metadata Submission
+  themes: [maintenance, operations]
+  description: >-
+    Rework the Balrog admin interface to optimize how update metadata about
+    individual locales is submitted, to increase reliability and efficiency.
+
+push-health-ux-rework:
+  title: Push Health UX Rework
+  themes: [maintenance]
+  description: >-
+    Give developers a simple view of what failures seen in CI need their
+    attention.
+
+mozillavpn-signing:
+  title: Automated MozillaVPN signing
+  themes: [user-growth]
+  description: >-
+    Set up automated signing for MozillaVPN.
+
+treeherder-sheriff-requests:
+  title: Specific bug fixes and feature requests for sheriffs
+  themes: [maintenance]
+  description: >-
+    Improving workflows for sheriffs make them more efficient and accurate.
+    It also makes their lives easier.
+
+python-3-migration:
+  title: Finish Python 3 migration
+  themes: [maintenance]
+  description: >-
+    Python 2 has been EOLed since the end of 2019. Pip will drop support for
+    Python 2.7 in Jan 2021.
+
+push-health-mozci:
+  title: Push Health MozCI integration
+  themes: [maintenance]
+  description: >-
+    Improve Push Health regression detection accuracy by integrating MozCI
+
+test-distribution-optimization:
+  title: Test distribution and scheduling optimizations
+  themes: [cost-reduction, maintenance]
+  description: >-
+    Reduce overhead related to getting test files onto the test workers; stop
+    scheduling builds for test-only changes.
+
+developer-productivity:
+  title: Developer Productivity
+  themes: [maintenance]
+  description: >-
+    Improve developer productivity by addressing bugs developers file/mention
+    and being proactive on workflows
+
+archive-cleanup:
+  title: archive.mozilla.org cleanup
+  themes: [cost-reduction]
+  description: >-
+    Get rid of unnecessary files on archive.mozilla.org and enact new retention
+    policies
+
+ios-needs:
+  title: Improve iOS build, release, and CI pipeline
+  themes: [user-growth]
+  description: >-
+    iOS builds & releases are more important than ever, and ensuring developers
+    are unblocked and that releases can ship on time is very important.
