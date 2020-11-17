@@ -47,7 +47,7 @@ A _theme_ is a large focus area than spans the Mozilla organization and is perti
 
 ### Initiative
 
-An _initiative_ is a collection of one or more sprints that, taken together, address one or more themes. Initiatives map to major roadmap projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single sprint if that sprint is high value and self-contained.  Initiatives are gathered [here](https://github.com/taskcluster/scrum/blob/main/gen/initiatives.md).
+An _initiative_ is a collection of one or more sprints that, taken together, address one or more themes. Initiatives map to major roadmap projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single sprint if that sprint is high value and self-contained.  Initiatives are gathered [here](https://github.com/mozilla-releng/scrum/blob/main/gen/initiatives.md).
 
 ### Sprint
 The _sprint_ is made up of a small collection of epics, and should be resolvable without a period of 2-5 weeks. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Sprints can address one or more initiatives; all the epics in a given Sprint do not need to service the same initiative. Sprints are tracked [in Jira](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&view=detail).
