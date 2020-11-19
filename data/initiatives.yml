@@ -98,12 +98,6 @@ push-health-ux-rework:
     Give developers a simple view of what failures seen in CI need their
     attention.
 
-mozillavpn-signing:
-  title: Automated MozillaVPN signing
-  themes: [user-growth]
-  description: >-
-    Set up automated signing for MozillaVPN.
-
 treeherder-sheriff-requests:
   title: Specific bug fixes and feature requests for sheriffs
   themes: [maintenance]
@@ -151,3 +145,10 @@ ios-needs:
   description: >-
     iOS builds & releases are more important than ever, and ensuring developers
     are unblocked and that releases can ship on time is very important.
+
+mozillavpn:
+  title: Support MozillaVPN Releases
+  themes: [user-growth]
+  description: >-
+    MozillaVPN is a new product that is quickly gaining traction. We need make
+    sure that they can ship, and eventually, have proper CI/Release automation.
