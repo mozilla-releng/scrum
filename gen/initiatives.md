@@ -17,7 +17,6 @@ The following are the current initiatives:
 * [Right-size cloud instances](#right-size-instances)
 * [Balrog Metadata Submission](#balrog-metadata)
 * [Push Health UX Rework](#push-health-ux-rework)
-* [Automated MozillaVPN signing](#mozillavpn-signing)
 * [Specific bug fixes and feature requests for sheriffs](#treeherder-sheriff-requests)
 * [Finish Python 3 migration](#python-3-migration)
 * [Push Health MozCI integration](#push-health-mozci)
@@ -25,6 +24,7 @@ The following are the current initiatives:
 * [Developer Productivity](#developer-productivity)
 * [archive.mozilla.org cleanup](#archive-cleanup)
 * [Improve iOS build, release, and CI pipeline](#ios-needs)
+* [Support MozillaVPN Releases](#mozillavpn)
 
 To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
@@ -191,18 +191,6 @@ Give developers a simple view of what failures seen in CI need their attention.
 * [Project Maintenance](./themes.md#maintenance)
 
 
-## mozillavpn-signing
-*Automated MozillaVPN signing*
-
-Set up automated signing for MozillaVPN.
-
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amozillavpn-signing)
-
-*Addresses Theme:*
-
-* [Support user growth in Mozilla products](./themes.md#user-growth)
-
-
 ## treeherder-sheriff-requests
 *Specific bug fixes and feature requests for sheriffs*
 
@@ -282,6 +270,18 @@ Get rid of unnecessary files on archive.mozilla.org and enact new retention poli
 iOS builds & releases are more important than ever, and ensuring developers are unblocked and that releases can ship on time is very important.
 
 [*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aios-needs)
+
+*Addresses Theme:*
+
+* [Support user growth in Mozilla products](./themes.md#user-growth)
+
+
+## mozillavpn
+*Support MozillaVPN Releases*
+
+MozillaVPN is a new product that is quickly gaining traction. We need make sure that they can ship, and eventually, have proper CI/Release automation.
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amozillavpn)
 
 *Addresses Theme:*
 

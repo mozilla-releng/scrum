@@ -74,6 +74,6 @@ Build functionality to ship features, products, and fixes that increase Mozilla 
 * [Initiate and drive Fenix release automation through the Shipit service](./initiatives.md#fenix-shipit)
 * [Apple Silicon Support](./initiatives.md#apple-silicon-support)
 * [Integrate Geckoview and Android-Components in the Fenix pipeline on Shipit](./initiatives.md#geckoview-android-components-shipit)
-* [Automated MozillaVPN signing](./initiatives.md#mozillavpn-signing)
 * [Improve iOS build, release, and CI pipeline](./initiatives.md#ios-needs)
+* [Support MozillaVPN Releases](./initiatives.md#mozillavpn)
 
