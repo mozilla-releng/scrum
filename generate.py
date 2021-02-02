@@ -30,6 +30,8 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 {body}
 """
 
+PRIORITIES = ("high", "medium", None, "low")
+
 def load(filename):
     return yaml.safe_load(open(filename))
 
@@ -37,7 +39,17 @@ def load(filename):
 def load_data():
     global THEMES, INITIATIVES
     THEMES = load("data/themes.yml")
-    INITIATIVES = load("data/initiatives.yml")
+    INITIATIVES = sort_initiatives(load("data/initiatives.yml"))
+
+
+def sort_initiatives(initiatives):
+    sorted_initiatives = {}
+    for priority in PRIORITIES:
+        for id, init in initiatives.items():
+            assert init.get("priority") in PRIORITIES
+            if init.get("priority") == priority:
+                sorted_initiatives[id] = init
+    return sorted_initiatives
 
 
 def fix_themes():

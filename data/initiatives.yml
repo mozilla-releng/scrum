@@ -4,151 +4,409 @@
 #   title: <initiative title>  # one line
 #   theme: <theme-id>                # singular or plural
 #   themes: [<theme-id>, <theme-id>] # is acceptable
-#   priority: <priority>  # optional, 1-5 based on roadmap prioritization
+#   priority: <priority>  # optional, "high", "medium", "low"
 #   description: >-
 #     <initiative description> # multiline, markdown
 
 ktlo:
   title: Keep the Lights On
-  themes: [maintenance, operations]
+  themes: [workflow, operations]
+  priority: high
   description: >-
     Ensure all RelEng systems are working in order to keep our products
     pipeline running.
 
-automation-needs:
-  title: Automation Needs
-  themes: [maintenance]
+geckoview-android-components-shipit:
+  title: Integrate Geckoview and Android-Components in the Fenix pipeline on Shipit
+  themes: [user-growth, workflow]
+  priority: high
   description: >-
-    Keep Firefox CI OS+hardware/cloud environments relevant and investigate
-    ways to reduce pain points.
-
-fenix-shipit:
-  title: Initiate and drive Fenix release automation through the Shipit service
-  themes: [user-growth, maintenance]
-  description: >-
-    Support Fenix in Shipit, reducing human error and time spent shepherding
-    Fenix releases.
-
-apple-silicon-support:
-  title: Apple Silicon Support
-  themes: [user-growth, maintenance]
-  description: >-
-    Determine what is needed to support Apple Silicon build signing and
-    testing, and the timeframe it’s needed in.
-
-test-scheduling:
-  title: Test Scheduling improvements
-  themes: [cost-reduction, maintenance]
-  description: >-
-    Use smarter scheduling algorithms to reduce the number of tasks we run in
-    CI and give developers greater confidence in their try pushes.
+    Automate GeckoView and Android-Components releases like Fenix, reducing
+    cross-team interactions and friction.
 
 fenix-v3-signatures:
   title: Implement Android v3 signatures and sign Fenix with them
-  themes: [maintenance]
+  themes: [workflow, security]
+  priority: high
   description: >-
     We should sign Fenix with both v1 and v3 signatures so that we support
     legacy versions of Android while covering ourselves in case of a key
     leakage.
 
-secrets-rotation:
-  title: Rotate releng secrets and share with the team
-  themes: [maintenance, operations]
+system-addons-balrog:
+  title: Automate shipping system addons through Balrog
+  themes: [workflow, security]
+  priority: high
   description: >-
-    Rotate releng secrets.
+    Document, automate, and run periodic tests to make sure we are ready to
+    ship system addons to all versions of Firefox through automation.
 
-geckoview-android-components-shipit:
-  title: Integrate Geckoview and Android-Components in the Fenix pipeline on Shipit
-  themes: [user-growth, maintenance]
+formalize-addons-pipeline:
+  title: Work with the Addons team to formalize the Addons Pipeline
+  themes: [workflow]
+  priority: high
   description: >-
-    Automate GeckoView and Android-Components releases like Fenix, reducing
-    cross-team interactions and friction.
+    Clarify and streamline the rules and process of the addons pipeline.
 
-task-efficiencies:
-  title: Reduce wasted compute and idle time in our CI infrastructure
-  themes: [cost-reduction]
+automate-mac-signer-maintenance:
+  title: Automate Mac Signer Maintenance
+  themes: [operations, security]
+  priority: high
   description: >-
-    Reduce test frequencies, wasted time in tasks, and idle time in our CI
-    infrastructure.
+    End goal of rolling out changes to the mac signers via ronin-puppet commit,
+    reducing ssh and manual maintenance to zero.
 
-activedata-maintenance:
-  title: ActiveData Maintenance
-  themes: [maintenance]
+apple-silicon-support:
+  title: Apple Silicon Support
+  themes: [user-growth, workflow]
+  priority: high
   description: >-
-    Keep ActiveData running, until we find alternate solutions.
+    Determine what is needed to support Apple Silicon build signing and
+    testing, and the timeframe it’s needed in.
 
-right-size-instances:
-  title: Right-size cloud instances
-  themes: [cost-reduction]
+modernizing-test-platforms:
+  title: Modernizing OS/Hardware for CI tests
+  themes: [operations, workflow]
+  priority: medium
   description: >-
-    Create system to identify tasks running on oversized instances by
-    collecting resource usage data into our data analytics platform (BigQuery)
-
-balrog-metadata:
-  title: Balrog Metadata Submission
-  themes: [maintenance, operations]
-  description: >-
-    Rework the Balrog admin interface to optimize how update metadata about
-    individual locales is submitted, to increase reliability and efficiency.
+    Keep Firefox CI OS+hardware/cloud environments relevant and investigate
+    ways to reduce pain points.
 
 push-health-ux-rework:
   title: Push Health UX Rework
-  themes: [maintenance]
+  themes: [workflow]
+  priority: high
   description: >-
     Give developers a simple view of what failures seen in CI need their
     attention.
 
-treeherder-sheriff-requests:
-  title: Specific bug fixes and feature requests for sheriffs
-  themes: [maintenance]
+firefox-nightly-shipit:
+  title: Drive desktop Firefox Nightly automation through shipit
+  themes: [workflow]
+  priority: low
   description: >-
-    Improving workflows for sheriffs make them more efficient and accurate.
-    It also makes their lives easier.
+    Unify nightly and release automation in Gecko.
 
-python-3-migration:
-  title: Finish Python 3 migration
-  themes: [maintenance]
+speed-up-update-verify:
+  title: Speed up update verify
+  themes: [cost-reduction, workflow]
+  priority: low
   description: >-
-    Python 2 has been EOLed since the end of 2019. Pip will drop support for
-    Python 2.7 in Jan 2021.
-
-push-health-mozci:
-  title: Push Health MozCI integration
-  themes: [maintenance]
-  description: >-
-    Improve Push Health regression detection accuracy by integrating MozCI
-
-test-distribution-optimization:
-  title: Test distribution and scheduling optimizations
-  themes: [cost-reduction, maintenance]
-  description: >-
-    Reduce overhead related to getting test files onto the test workers; stop
-    scheduling builds for test-only changes.
+    Speed up update verify.
 
 developer-productivity:
   title: Developer Productivity
-  themes: [maintenance]
+  themes: [workflow]
+  priority: medium
   description: >-
     Improve developer productivity by addressing bugs developers file/mention
     and being proactive on workflows
 
+activedata-eol:
+  title: Productionize or EOL ActiveData
+  themes: [operations]
+  priority: low
+  description: >-
+    Productionize or EOL ActiveData.
+
+treeherder-login-experience:
+  title: "Treeherder: Improve login experience"
+  themes: [workflow]
+  priority: medium
+  description: >-
+    Minimize papercuts in Treeherder by increasing login TTL.
+
+treeherder-maintenance:
+  title: "Treeherder: Maintenance/Backlog"
+  themes: [workflow]
+  priority: low
+  description: >-
+    Treeherder maintenance and backlog
+
+python-3-migration:
+  title: Finish Python 3 migration
+  themes: [operations, security]
+  priority: medium
+  description: >-
+    Python 2 has been EOLed since the end of 2019. Pip dropped support for
+    Python 2.7 in Jan 2021.
+
+automate-firefox-update-tests:
+  title: Automate QA's Firefox Update Tests
+  themes: [cost-reduction, workflow]
+  priority: medium
+  description: >-
+    QA runs update tests against a matrix of Firefox versions. They want us to
+    run these tests in automation.
+
+password-rotations:
+  title: Password Rotations and Sharing
+  themes: [security]
+  priority: high
+  description: >-
+    Rotate secrets and populate the new secrets store.
+
+releng-for-mozilla-proposal:
+  title: Develop Releng for Mozilla Proposal
+  themes: [workflow, security, user-growth]
+  priority: high
+  description: >-
+    Create a proposal to also help non-Gecko teams at Mozilla with their
+    release pipelines.
+
+firefox-snap-default:
+  title: Make Firefox Snap the default format on Ubuntu
+  themes: [workflow, security, user-growth]
+  priority: medium
+  description: >-
+    Make Snap the default format on Ubuntu. This will make a Mozilla build
+    the default, rather than a distribution rebuild. There may be contracts
+    involved.
+
+automate-mergeduty:
+  title: Fully automate mergeduty
+  themes: [workflow]
+  priority: low
+  description: >-
+    Fully automate the rest of mergeduty.
+
+binary-transparency:
+  title: Binary Transparency
+  themes: [security]
+  priority: low
+  description: >-
+    Implement Binary Transparency for Firefox updates
+
+standardize-gecko-python:
+  title: Standardize Python Dependency Pinning in Gecko
+  themes: [security, workflow]
+  priority: high
+  description: >-
+    Work with the Build team to standardize how we pin and install dependencies
+    across Gecko, including developer virtualenvs, automated builds, and
+    automated tests.
+
+mozilla-china-fenix:
+  title: Support Mozilla China Fenix
+  themes: [security, workflow]
+  priority: high
+  description: >-
+    Automate a Mozilla China variant of Fenix in the official Fenix repo,
+    at the same cadence as other Fenix releases.
+
+android-components-contributor-prs:
+  title: Support tests in external contributor PRs in Android-Components
+  themes: [security, workflow]
+  priority: high
+  description: >-
+    Potentially install and support Bors for automated tests in PRs without
+    exposing secrets to the internet.
+
+mobile-task-robustness:
+  title: Improve mobile release and CI task robustness
+  themes: [workflow, operations]
+  priority: medium
+  description: >-
+    Intermittent failures are forcing mobile developers to rerun 100+ tasks
+    instead of automatically rerunning; let's improve that.
+
+focus-shipit:
+  title: Support Focus releases through Shipit
+  themes: [workflow, security]
+  priority: medium
+  description: >-
+    Let's unify our mobile pipelines by supporting Focus in shipit.
+
+upload-fenix-to-fennec-locations:
+  title: Upload Fenix to places where Fennec used to live
+  themes: [workflow]
+  priority: low
+  description: >-
+    Backup Fenix artifacts in S3 for future + update Buildhub for automation
+    downstream consumption. Not urgent but nice-to-have. request from the
+    mobile team too
+
+migrate-windows-10-aws-to-azure:
+  title: Migrate Windows 10 from AWS to Azure
+  themes: [operations, cost-reduction]
+  priority: high
+  description: >-
+    Migrate our Windows 10 tasks from AWS to Azure.
+
+migrate-windows-10-datacenter-to-azure:
+  title: Migrate win10 tests from Datacenter to Azure
+  themes: [operations, cost-reduction]
+  priority: low
+  description: >-
+    datacenter machines are past warranty and need to be replaced in 2022, work
+    in 2021 to capacity plan and evaluate new machines
+
+migrate-from-mdc2:
+  title: Migrate from MDC2
+  themes: [operations, cost-reduction]
+  priority: high
+  description: >-
+    Support the migration out of MDC2.
+
+bitbar-contract-renewal:
+  title: Bitbar contract renewal
+  themes: [operations, cost-reduction]
+  priority: high
+  description: >-
+    Contract expires mid-April. We need a solution for android/fenix/laptop
+    perf testing and to plan capacity in a budget-friendly way. With some
+    minimum efforts, we could save ~$100K
+
+linux-arm64-ci:
+  title: Add support for Linux ARM64 in the CI
+  themes: [operations, workflow]
+  priority: medium
+  description: >-
+    Better ARM64 automated testing overall. M1 automatic testing will be hard
+    at scale. Testing more on Linux will help identifying CPU specific issue
+    for both Linux and Apple Silicon since they are very similar. Would help
+    for mobile too since most of Android is ARM64.
+
+treeherder-cloudops:
+  title: Treeherder - move to CloudOps dockerflow
+  themes: [operations, workflow]
+  priority: high
+  description: >-
+    Mitigate risk of only having a small handful of people who could respond to
+    emergencies. Also brings consistency across rest of the RelEng major
+    systems that are already in CloudOps's hands.
+
+treeherder-failure-classification:
+  title: TreeHerder Failure Classification
+  themes: [workflow]
+  priority: medium
+  description: >-
+    This is a common request from sheriffs. Not having this is slowing their
+    work and decreasing accuracy.
+
+treeherder-sheriff-requests:
+  title: Treeherder - sheriff improvement fixes/requests
+  themes: [workflow]
+  priority: high
+  description: >-
+    There are fixes they've been asking for for many years that add up to lost
+    productivity
+
+treeherder-bad-machines:
+  title: Treeherder - Identify bad machines
+  themes: [workflow, cost-reduction]
+  priority: medium
+  description: >-
+    Effort to reduce sheriff load, spending 2h/week finding patterns and
+    investigating
+
+quarantine-intermittents:
+  title: "Intermittents: quickly move repeatable failures to a quarantine job"
+  themes: [workflow, cost-reduction]
+  priority: high
+  description: >-
+    Ability to run tests in quarantine as part of new config process, desire to
+    reduce load on code sheriffs, existing processes depend on activedata which
+    isn't well supported anymore
+
+deprecate-l10n-repacks:
+  title: Work with l10n team to deprecate l10n repacks
+  themes: [cost-reduction, workflow, user-growth]
+  priority: medium
+  description: >-
+    There is momentum from the l10n team on this. This would exponentially
+    reduce taskgraph complexity and release end-to-end times. We would reduce
+    the number of shipping desktop binaries exponentially. Repacks are also
+    significantly less discoverable or configurable on shared/multilingual
+    users’ machines than langpacks could be.
+
+task-efficiencies:
+  title: Reduce wasted compute and idle time in our CI infrastructure
+  themes: [cost-reduction]
+  priority: low
+  description: >-
+    Reduce test frequencies, wasted time in tasks, and idle time in our CI
+    infrastructure.
+
 archive-cleanup:
   title: archive.mozilla.org cleanup
   themes: [cost-reduction]
+  priority: medium
   description: >-
     Get rid of unnecessary files on archive.mozilla.org and enact new retention
     policies
 
-ios-needs:
-  title: Improve iOS build, release, and CI pipeline
-  themes: [user-growth]
+right-size-instances:
+  title: Right-size cloud instances
+  themes: [cost-reduction]
+  priority: low
   description: >-
-    iOS builds & releases are more important than ever, and ensuring developers
-    are unblocked and that releases can ship on time is very important.
+    Create system to identify tasks running on oversized instances by
+    collecting resource usage data into our data analytics platform (BigQuery)
 
-mozillavpn:
-  title: Support MozillaVPN Releases
-  themes: [user-growth]
+test-scheduling:
+  title: Test Scheduling improvements
+  themes: [cost-reduction, workflow]
+  priority: low
   description: >-
-    MozillaVPN is a new product that is quickly gaining traction. We need make
-    sure that they can ship, and eventually, have proper CI/Release automation.
+    Use smarter scheduling algorithms to reduce the number of tasks we run in
+    CI and give developers greater confidence in their try pushes.
+
+taskgraph-learning-curve:
+  title: reduce taskgraph learning curve
+  themes: [workflow]
+  priority: medium
+  description: >-
+    Improving the tool reduces the learning curve for Releng, saves us future
+    effort, helps with better automation and adds more self-serving
+    capabilities for other teams that are using it.
+
+valuing-bug-sources:
+  title: Valuing Bug Sources
+  themes: [cost-reduction]
+  priority: medium
+  description: >-
+    We pay a significant amount to various sources to file new bugs. By
+    creating a tool to show relative values of each bug filing source, we can
+    determine whether each is worth the cost.
+
+firefox-lite-eol:
+  title: EOL Firefox Lite
+  themes: [operations]
+  priority: high
+  description: >-
+    Firefox Lite is no longer supported, but we want to create a few more
+    releases to notify users and send them to other products. We no longer have
+    a team creating these releases; let's help the mobile team get these
+    releases signed and shipped.
+
+push-riskiness:
+  title: Team view of riskiness of pushes
+  themes: [workflow]
+  priority: medium
+  description: >-
+    The idea is to move some of the knowledge and responsibility that is
+    currently RelMan’s and spread it across engineering teams. Distributed
+    responsibility should make it easier to control quality, since each team
+    will take ownership of quality for the components they own rather than
+    relying on a small "third-party" team to oversee everything.
+
+treeherder-dark-mode:
+  title: Implement a dark mode theme in Treeherder
+  themes: [workflow]
+  priority: low
+  description: >-
+    Per camd, this has been a popular feature request from sheriffs for a while
+    and he had taken a stab at it in the past but found it was too much work
+    with competing, higher priorities (one of the challenges being the amount
+    of custom CSS we have and keeping the contrast between various colors
+    accessible).
+
+automate-fenix-betas:
+  title: Automate Fenix Betas
+  themes: [workflow]
+  priority: high
+  description: >-
+    Fenix beta timing requires RelMan to be around in the north american
+    evening to trigger them. We should be able to automate this relatively
+    easily to make their lives better

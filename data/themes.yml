@@ -17,10 +17,10 @@ cost-reduction:
     Build functionality that can be used to reduce costs for the projects we
     develop and operate.
 
-maintenance:
-  title: Project Maintenance
+workflow:
+  title: Workflow
   description: >-
-    Ongoing maintenance of Mozilla CI and release pipelines and tooling.
+    Improvements in Mozilla CI and release pipelines and tooling workflow.
 
 operations:
   title: Team Operations
@@ -28,3 +28,12 @@ operations:
     Improve our operational efficiency, including
      * Releaseduty
      * General team operations (secret handling, access control, cross-training, etc.)
+
+security:
+  title: Security
+  description: >-
+    Improve our operational security, including
+     * Chain of Trust
+     * Adding signoffs and monitoring
+     * Reducing manual interaction with sensitive systems to zero
+     * Allowing for cert rotations
