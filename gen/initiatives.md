@@ -1,6 +1,6 @@
 # Initiatives
 
-An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
+An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
 The following are the current initiatives:
 
@@ -61,7 +61,7 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
 Ensure all RelEng systems are working in order to keep our products pipeline running.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aktlo)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20ktlo)
 
 *Addresses Themes:*
 
@@ -74,7 +74,7 @@ Ensure all RelEng systems are working in order to keep our products pipeline run
 
 Automate GeckoView and Android-Components releases like Fenix, reducing cross-team interactions and friction.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Ageckoview-android-components-shipit)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20geckoview-android-components-shipit)
 
 *Addresses Themes:*
 
@@ -87,7 +87,7 @@ Automate GeckoView and Android-Components releases like Fenix, reducing cross-te
 
 We should sign Fenix with both v1 and v3 signatures so that we support legacy versions of Android while covering ourselves in case of a key leakage.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Afenix-v3-signatures)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20fenix-v3-signatures)
 
 *Addresses Themes:*
 
@@ -100,7 +100,7 @@ We should sign Fenix with both v1 and v3 signatures so that we support legacy ve
 
 Document, automate, and run periodic tests to make sure we are ready to ship system addons to all versions of Firefox through automation.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Asystem-addons-balrog)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20system-addons-balrog)
 
 *Addresses Themes:*
 
@@ -113,7 +113,7 @@ Document, automate, and run periodic tests to make sure we are ready to ship sys
 
 Clarify and streamline the rules and process of the addons pipeline.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aformalize-addons-pipeline)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20formalize-addons-pipeline)
 
 *Addresses Theme:*
 
@@ -125,7 +125,7 @@ Clarify and streamline the rules and process of the addons pipeline.
 
 End goal of rolling out changes to the mac signers via ronin-puppet commit, reducing ssh and manual maintenance to zero.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aautomate-mac-signer-maintenance)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20automate-mac-signer-maintenance)
 
 *Addresses Themes:*
 
@@ -138,7 +138,7 @@ End goal of rolling out changes to the mac signers via ronin-puppet commit, redu
 
 Determine what is needed to support Apple Silicon build signing and testing, and the timeframe it’s needed in.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aapple-silicon-support)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20apple-silicon-support)
 
 *Addresses Themes:*
 
@@ -151,7 +151,7 @@ Determine what is needed to support Apple Silicon build signing and testing, and
 
 Give developers a simple view of what failures seen in CI need their attention.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Apush-health-ux-rework)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20push-health-ux-rework)
 
 *Addresses Theme:*
 
@@ -163,7 +163,7 @@ Give developers a simple view of what failures seen in CI need their attention.
 
 Rotate secrets and populate the new secrets store.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Apassword-rotations)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20password-rotations)
 
 *Addresses Theme:*
 
@@ -175,7 +175,7 @@ Rotate secrets and populate the new secrets store.
 
 Create a proposal to also help non-Gecko teams at Mozilla with their release pipelines.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Areleng-for-mozilla-proposal)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20releng-for-mozilla-proposal)
 
 *Addresses Themes:*
 
@@ -189,7 +189,7 @@ Create a proposal to also help non-Gecko teams at Mozilla with their release pip
 
 Work with the Build team to standardize how we pin and install dependencies across Gecko, including developer virtualenvs, automated builds, and automated tests.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Astandardize-gecko-python)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20standardize-gecko-python)
 
 *Addresses Themes:*
 
@@ -202,7 +202,7 @@ Work with the Build team to standardize how we pin and install dependencies acro
 
 Automate a Mozilla China variant of Fenix in the official Fenix repo, at the same cadence as other Fenix releases.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amozilla-china-fenix)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20mozilla-china-fenix)
 
 *Addresses Themes:*
 
@@ -215,7 +215,7 @@ Automate a Mozilla China variant of Fenix in the official Fenix repo, at the sam
 
 Potentially install and support Bors for automated tests in PRs without exposing secrets to the internet.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aandroid-components-contributor-prs)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20android-components-contributor-prs)
 
 *Addresses Themes:*
 
@@ -228,7 +228,7 @@ Potentially install and support Bors for automated tests in PRs without exposing
 
 Migrate our Windows 10 tasks from AWS to Azure.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amigrate-windows-10-aws-to-azure)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20migrate-windows-10-aws-to-azure)
 
 *Addresses Themes:*
 
@@ -241,7 +241,7 @@ Migrate our Windows 10 tasks from AWS to Azure.
 
 Support the migration out of MDC2.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amigrate-from-mdc2)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20migrate-from-mdc2)
 
 *Addresses Themes:*
 
@@ -254,7 +254,7 @@ Support the migration out of MDC2.
 
 Contract expires mid-April. We need a solution for android/fenix/laptop perf testing and to plan capacity in a budget-friendly way. With some minimum efforts, we could save ~$100K
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Abitbar-contract-renewal)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20bitbar-contract-renewal)
 
 *Addresses Themes:*
 
@@ -267,7 +267,7 @@ Contract expires mid-April. We need a solution for android/fenix/laptop perf tes
 
 Mitigate risk of only having a small handful of people who could respond to emergencies. Also brings consistency across rest of the RelEng major systems that are already in CloudOps's hands.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-cloudops)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-cloudops)
 
 *Addresses Themes:*
 
@@ -280,7 +280,7 @@ Mitigate risk of only having a small handful of people who could respond to emer
 
 There are fixes they've been asking for for many years that add up to lost productivity
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-sheriff-requests)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-sheriff-requests)
 
 *Addresses Theme:*
 
@@ -292,7 +292,7 @@ There are fixes they've been asking for for many years that add up to lost produ
 
 Ability to run tests in quarantine as part of new config process, desire to reduce load on code sheriffs, existing processes depend on activedata which isn't well supported anymore
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aquarantine-intermittents)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20quarantine-intermittents)
 
 *Addresses Themes:*
 
@@ -305,7 +305,7 @@ Ability to run tests in quarantine as part of new config process, desire to redu
 
 Firefox Lite is no longer supported, but we want to create a few more releases to notify users and send them to other products. We no longer have a team creating these releases; let's help the mobile team get these releases signed and shipped.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Afirefox-lite-eol)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20firefox-lite-eol)
 
 *Addresses Theme:*
 
@@ -317,7 +317,7 @@ Firefox Lite is no longer supported, but we want to create a few more releases t
 
 Fenix beta timing requires RelMan to be around in the north american evening to trigger them. We should be able to automate this relatively easily to make their lives better
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aautomate-fenix-betas)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20automate-fenix-betas)
 
 *Addresses Theme:*
 
@@ -329,7 +329,7 @@ Fenix beta timing requires RelMan to be around in the north american evening to 
 
 Keep Firefox CI OS+hardware/cloud environments relevant and investigate ways to reduce pain points.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amodernizing-test-platforms)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20modernizing-test-platforms)
 
 *Addresses Themes:*
 
@@ -342,7 +342,7 @@ Keep Firefox CI OS+hardware/cloud environments relevant and investigate ways to 
 
 Improve developer productivity by addressing bugs developers file/mention and being proactive on workflows
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Adeveloper-productivity)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20developer-productivity)
 
 *Addresses Theme:*
 
@@ -354,7 +354,7 @@ Improve developer productivity by addressing bugs developers file/mention and be
 
 Minimize papercuts in Treeherder by increasing login TTL.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-login-experience)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-login-experience)
 
 *Addresses Theme:*
 
@@ -366,7 +366,7 @@ Minimize papercuts in Treeherder by increasing login TTL.
 
 Python 2 has been EOLed since the end of 2019. Pip dropped support for Python 2.7 in Jan 2021.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Apython-3-migration)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20python-3-migration)
 
 *Addresses Themes:*
 
@@ -379,7 +379,7 @@ Python 2 has been EOLed since the end of 2019. Pip dropped support for Python 2.
 
 QA runs update tests against a matrix of Firefox versions. They want us to run these tests in automation.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aautomate-firefox-update-tests)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20automate-firefox-update-tests)
 
 *Addresses Themes:*
 
@@ -392,7 +392,7 @@ QA runs update tests against a matrix of Firefox versions. They want us to run t
 
 Make Snap the default format on Ubuntu. This will make a Mozilla build the default, rather than a distribution rebuild. There may be contracts involved.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Afirefox-snap-default)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20firefox-snap-default)
 
 *Addresses Themes:*
 
@@ -406,7 +406,7 @@ Make Snap the default format on Ubuntu. This will make a Mozilla build the defau
 
 Intermittent failures are forcing mobile developers to rerun 100+ tasks instead of automatically rerunning; let's improve that.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amobile-task-robustness)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20mobile-task-robustness)
 
 *Addresses Themes:*
 
@@ -419,7 +419,7 @@ Intermittent failures are forcing mobile developers to rerun 100+ tasks instead 
 
 Let's unify our mobile pipelines by supporting Focus in shipit.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Afocus-shipit)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20focus-shipit)
 
 *Addresses Themes:*
 
@@ -432,7 +432,7 @@ Let's unify our mobile pipelines by supporting Focus in shipit.
 
 Better ARM64 automated testing overall. M1 automatic testing will be hard at scale. Testing more on Linux will help identifying CPU specific issue for both Linux and Apple Silicon since they are very similar. Would help for mobile too since most of Android is ARM64.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Alinux-arm64-ci)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20linux-arm64-ci)
 
 *Addresses Themes:*
 
@@ -445,7 +445,7 @@ Better ARM64 automated testing overall. M1 automatic testing will be hard at sca
 
 This is a common request from sheriffs. Not having this is slowing their work and decreasing accuracy.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-failure-classification)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-failure-classification)
 
 *Addresses Theme:*
 
@@ -457,7 +457,7 @@ This is a common request from sheriffs. Not having this is slowing their work an
 
 Effort to reduce sheriff load, spending 2h/week finding patterns and investigating
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-bad-machines)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-bad-machines)
 
 *Addresses Themes:*
 
@@ -470,7 +470,7 @@ Effort to reduce sheriff load, spending 2h/week finding patterns and investigati
 
 There is momentum from the l10n team on this. This would exponentially reduce taskgraph complexity and release end-to-end times. We would reduce the number of shipping desktop binaries exponentially. Repacks are also significantly less discoverable or configurable on shared/multilingual users’ machines than langpacks could be.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Adeprecate-l10n-repacks)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20deprecate-l10n-repacks)
 
 *Addresses Themes:*
 
@@ -484,7 +484,7 @@ There is momentum from the l10n team on this. This would exponentially reduce ta
 
 Get rid of unnecessary files on archive.mozilla.org and enact new retention policies
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aarchive-cleanup)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20archive-cleanup)
 
 *Addresses Theme:*
 
@@ -496,7 +496,7 @@ Get rid of unnecessary files on archive.mozilla.org and enact new retention poli
 
 Improving the tool reduces the learning curve for Releng, saves us future effort, helps with better automation and adds more self-serving capabilities for other teams that are using it.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Ataskgraph-learning-curve)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20taskgraph-learning-curve)
 
 *Addresses Theme:*
 
@@ -508,7 +508,7 @@ Improving the tool reduces the learning curve for Releng, saves us future effort
 
 We pay a significant amount to various sources to file new bugs. By creating a tool to show relative values of each bug filing source, we can determine whether each is worth the cost.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Avaluing-bug-sources)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20valuing-bug-sources)
 
 *Addresses Theme:*
 
@@ -520,7 +520,7 @@ We pay a significant amount to various sources to file new bugs. By creating a t
 
 The idea is to move some of the knowledge and responsibility that is currently RelMan’s and spread it across engineering teams. Distributed responsibility should make it easier to control quality, since each team will take ownership of quality for the components they own rather than relying on a small "third-party" team to oversee everything.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Apush-riskiness)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20push-riskiness)
 
 *Addresses Theme:*
 
@@ -532,7 +532,7 @@ The idea is to move some of the knowledge and responsibility that is currently R
 
 Unify nightly and release automation in Gecko.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Afirefox-nightly-shipit)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20firefox-nightly-shipit)
 
 *Addresses Theme:*
 
@@ -544,7 +544,7 @@ Unify nightly and release automation in Gecko.
 
 Speed up update verify.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aspeed-up-update-verify)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20speed-up-update-verify)
 
 *Addresses Themes:*
 
@@ -557,7 +557,7 @@ Speed up update verify.
 
 Productionize or EOL ActiveData.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aactivedata-eol)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20activedata-eol)
 
 *Addresses Theme:*
 
@@ -569,7 +569,7 @@ Productionize or EOL ActiveData.
 
 Treeherder maintenance and backlog
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-maintenance)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-maintenance)
 
 *Addresses Theme:*
 
@@ -581,7 +581,7 @@ Treeherder maintenance and backlog
 
 Fully automate the rest of mergeduty.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aautomate-mergeduty)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20automate-mergeduty)
 
 *Addresses Theme:*
 
@@ -593,7 +593,7 @@ Fully automate the rest of mergeduty.
 
 Implement Binary Transparency for Firefox updates
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Abinary-transparency)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20binary-transparency)
 
 *Addresses Theme:*
 
@@ -605,7 +605,7 @@ Implement Binary Transparency for Firefox updates
 
 Backup Fenix artifacts in S3 for future + update Buildhub for automation downstream consumption. Not urgent but nice-to-have. request from the mobile team too
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aupload-fenix-to-fennec-locations)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20upload-fenix-to-fennec-locations)
 
 *Addresses Theme:*
 
@@ -617,7 +617,7 @@ Backup Fenix artifacts in S3 for future + update Buildhub for automation downstr
 
 datacenter machines are past warranty and need to be replaced in 2022, work in 2021 to capacity plan and evaluate new machines
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Amigrate-windows-10-datacenter-to-azure)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20migrate-windows-10-datacenter-to-azure)
 
 *Addresses Themes:*
 
@@ -630,7 +630,7 @@ datacenter machines are past warranty and need to be replaced in 2022, work in 2
 
 Reduce test frequencies, wasted time in tasks, and idle time in our CI infrastructure.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atask-efficiencies)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20task-efficiencies)
 
 *Addresses Theme:*
 
@@ -642,7 +642,7 @@ Reduce test frequencies, wasted time in tasks, and idle time in our CI infrastru
 
 Create system to identify tasks running on oversized instances by collecting resource usage data into our data analytics platform (BigQuery)
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aright-size-instances)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20right-size-instances)
 
 *Addresses Theme:*
 
@@ -654,7 +654,7 @@ Create system to identify tasks running on oversized instances by collecting res
 
 Use smarter scheduling algorithms to reduce the number of tasks we run in CI and give developers greater confidence in their try pushes.
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atest-scheduling)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20test-scheduling)
 
 *Addresses Themes:*
 
@@ -667,7 +667,7 @@ Use smarter scheduling algorithms to reduce the number of tasks we run in CI and
 
 Per camd, this has been a popular feature request from sheriffs for a while and he had taken a stab at it in the past but found it was too much work with competing, higher priorities (one of the challenges being the amount of custom CSS we have and keeping the contrast between various colors accessible).
 
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atreeherder-dark-mode)
+[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20treeherder-dark-mode)
 
 *Addresses Theme:*
 

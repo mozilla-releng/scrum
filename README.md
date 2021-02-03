@@ -50,7 +50,7 @@ A _theme_ is a large focus area than spans the Mozilla organization and is perti
 An _initiative_ is a collection of one or more sprints that, taken together, address one or more themes. Initiatives map to major roadmap projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single sprint if that sprint is high value and self-contained.  Initiatives are gathered [here](https://github.com/mozilla-releng/scrum/blob/main/gen/initiatives.md).
 
 ### Sprint
-The _sprint_ is made up of a small collection of epics, and should be resolvable without a period of 2-5 weeks. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Sprints can address one or more initiatives; all the epics in a given Sprint do not need to service the same initiative. Sprints are tracked [in Jira](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&view=detail).
+The _sprint_ is made up of a small collection of epics, and should be resolvable without a period of ~3 weeks. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Sprints can address one or more initiatives; all the epics in a given Sprint do not need to service the same initiative. Sprints are tracked [in Jira](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&view=detail).
 
 ### Epic
 An _epic_ is a collection of user stories that describes plainly a feature of Releng infrastructure.
@@ -83,7 +83,7 @@ We are using [Jira](https://jira.mozilla.com/) to manage our agile process. Jira
 * sprints
 * burndown charts
 
-Any issues that are purely process-based (e.g. scrum documentation) should be filed in [the scrum repo](https://github.com/mozilla-releng/scrum). Epics are represented in Jira as [specially-tagged issues](https://jira.mozilla.com/browse/RELENG-79?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC). Since they are a process abstraction to link issues together, Epic issues should be filed in the scrum repo as well.
+Any issues that are purely process-based (e.g. scrum documentation) should be filed in [the scrum repo](https://github.com/mozilla-releng/scrum). Epics are represented in Jira as [specially-tagged issues](https://jira.mozilla.com/browse/RELENG-79?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC). If we provide a `label` that matches the scrum repo's initiative, those epics will show up in the appropriate initiative's search link.
 
 ## Roles
 We have three defined roles in our agile process:
@@ -105,7 +105,7 @@ The _Future sprint champion_ is responsible for organizing issues in the Product
 ### Planning a sprint
 During the previous sprint, one or more Future sprint champions do the work organize the issues into epics, and epics into new sprints. User stories are discussed and converted into Epics. New issues are filed or existing issues are tagged against the upcoming sprint.
 
-Zenhub allows setting dependencies between issues. While we need to be careful to avoid having _too many_ dependencies within a given sprint to avoid blocking work, we should leverage dependencies to help reveal the critical path for sprints.
+Jira allows setting dependencies between issues. While we need to be careful to avoid having _too many_ dependencies within a given sprint to avoid blocking work, we should leverage dependencies to help reveal the critical path for sprints.
 
 When planning for upcoming sprints, we should focus on the needs of Releng and the community deployment. We can act on specific requests or use cases from the Firefox deployment, but we should not assume anything on their behalf. This will help avoid Mozilla-specific solutions and potential re-work later on.
 
@@ -134,7 +134,7 @@ At the start of the sprint, the _Scrum master_ will update Jira to create a spri
 We will hold a kick-off meeting where the _Product owner_ will provide context enough for people to get started and assist developers in choosing their first issue to work on. The _Scrum master_ will remind everyone of any process changes being adopted for the new sprint. Work begins.
 
 ### During the sprint
-The team will hold daily stand-up meetings for the duration of the sprint. Our daily stand-ups take place in Slack asynchronously at the start of our day in Matrix, except on Tuesdays when we present our stand-up status as the first agenda item of our weekly team meeting. Whether delivered in person on via Slack, the format of the update is the same:
+The team will hold daily stand-up meetings for the duration of the sprint. Our daily stand-ups take place in Matrix asynchronously at the end of our day. The format of the update is:
 * DONE: work that has been completed
 * TODO: work that is coming up next
 * BLOCKERS: what is preventing you from getting the work done

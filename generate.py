@@ -5,7 +5,7 @@ import yaml
 THEMES_TPL = """\
 # Themes
 
-Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Taskcluster team.
+Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Releng team.
 
 The following are the current themes:
 
@@ -19,7 +19,7 @@ To update this information, edit `data/themes.yml` and run `generate.py`.
 INITIATIVES_TPL = """\
 # Initiatives
 
-An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
+An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Releng team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
 The following are the current initiatives:
 
@@ -112,7 +112,7 @@ def write_initiatives():
                 '',
                 init['description'],
                 '',
-                f'[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3A{id})',
+                f'[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20{id})',
                 '',
                 f'*Addresses {"Themes" if len(init["themes"]) != 1 else "Theme"}:*',
                 '',

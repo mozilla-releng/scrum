@@ -1,6 +1,6 @@
 # Themes
 
-Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Taskcluster team.
+Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Releng team.
 
 The following are the current themes:
 
