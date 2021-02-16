@@ -29,7 +29,6 @@ The following are the current initiatives:
 * [Developer Productivity](#developer-productivity)
 * [Treeherder: Improve login experience](#treeherder-login-experience)
 * [Finish Python 3 migration](#python-3-migration)
-* [Automate QA's Firefox Update Tests](#automate-firefox-update-tests)
 * [Make Firefox Snap the default format on Ubuntu](#firefox-snap-default)
 * [Improve mobile release and CI task robustness](#mobile-task-robustness)
 * [Support Focus releases through Shipit](#focus-shipit)
@@ -372,19 +371,6 @@ Python 2 has been EOLed since the end of 2019. Pip dropped support for Python 2.
 
 * [Team Operations](./themes.md#operations)
 * [Security](./themes.md#security)
-
-
-## automate-firefox-update-tests
-*Automate QA's Firefox Update Tests*
-
-QA runs update tests against a matrix of Firefox versions. They want us to run these tests in automation.
-
-[*Associated Epics*](https://jira.mozilla.com/issues/?jql=project%20%3D%20RELENG%20AND%20issuetype%20%3D%20Epic%20AND%20labels%20%3D%20automate-firefox-update-tests)
-
-*Addresses Themes:*
-
-* [Support cost reduction](./themes.md#cost-reduction)
-* [Workflow](./themes.md#workflow)
 
 
 ## firefox-snap-default

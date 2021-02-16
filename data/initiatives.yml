@@ -131,14 +131,6 @@ python-3-migration:
     Python 2 has been EOLed since the end of 2019. Pip dropped support for
     Python 2.7 in Jan 2021.
 
-automate-firefox-update-tests:
-  title: Automate QA's Firefox Update Tests
-  themes: [cost-reduction, workflow]
-  priority: medium
-  description: >-
-    QA runs update tests against a matrix of Firefox versions. They want us to
-    run these tests in automation.
-
 password-rotations:
   title: Password Rotations and Sharing
   themes: [security]
