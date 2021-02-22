@@ -2,7 +2,7 @@
 
 ## Initial changes to consider for this sprint
 - To start using JIRA Sprints and the story points system.
-- To split epics into stories, discrete pieces of work, each with estimated number of human days: ~1 day = 1 story point. We also considered Fibonacci story points at some point, but delayed for a future iteration.
+- To split epics into stories, discrete pieces of work, each with estimated number of human days: ~1 day = 1 story point.
 - To agree that Scrum Master and Product Owners catch-up during regular 1x1s.
 
 ## Marco meeting
@@ -43,7 +43,7 @@ He had several high value suggestions and a somewhat different Sprint model mech
 ## Process changes for next sprint
 - Have a dedicated channel for daily standup
 - We should allocate good time for planning in order to be successful. We validated that for VPN, we should extend for all epics going forward
-- Set clear number of story points == number of engineering days, rather than adding stuff and trim later.
+- To consider Fibonacci story points for next iteration to avoid bikeshedding too much about how many story points something should be
 - We should have the sprint, product owners and mechanics ready before the sprint starts.
 - Good to have a back burner to default work to.
 - Product owners can be the product owner of their epic(s), but scrum master of another epic
