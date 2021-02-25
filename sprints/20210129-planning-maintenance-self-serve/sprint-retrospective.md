@@ -16,4 +16,4 @@
 - To consider using a fixed number of story points for interruptduty, just like the Taskcluster team is doing
 - Considering to send out reminders for each Epic champion to touch base on their epic and adjust course if needed
 - Considereing whether we need a Scrum Master or not. The job mainly entails poking sprint developers for standups, updating their tickets, looking at burndown and poking epic champions for revisiting their epic scope for the sprint.
-- We decided to be more verbose about the interrupts that we're handling, both in the Spring board and in the standups
+- We decided to be more verbose about the interrupts that we're handling, both in the Sprint board and in the standups
