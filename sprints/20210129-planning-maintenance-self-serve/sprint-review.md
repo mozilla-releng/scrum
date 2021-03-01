@@ -12,7 +12,7 @@ the third was aimed at planning, maintaining and improving our systems self-serv
 - interruptduty:
 - greening-up tests: jmaher
 - releng 2021 planning:
-**Scrum Master**: unassigned
+**Scrum Master**: aki + team
 
 ## Goal
 
