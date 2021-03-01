@@ -5,7 +5,6 @@
 - Planning meshed nicely with the roadmap preparation
 - We got more familiarized with JIRA mechanics and its Sprint board
 - We tracked very well interrupts by adding them as tickets into interruptduty epic
--
 
 ## What didn't
 * [Burndown chart](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&view=reporting&chart=burndownChart&sprint=952) - because we added story points during the sprint, we never were able to get on track.

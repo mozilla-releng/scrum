@@ -54,4 +54,26 @@ also wrapping up our proposal for releng-for-Mozilla.
 
 ## Outcomes
 
+The Mac Signer work continued with some improvements in scriptworker for handling retries for -11. There's an RRA in progress as well.
+
+For ActiveData, some progress was made to identify upstream pushers and downstream consumers but there still is work to be done in order to conclude whether we can EOL it or not.
+
+Managed to get good chunk of password rotations, but still a good amount left to be done.
+
+Regarding PushHealth, unexpected issues with mozci integration, which was out of the sprint's scope initially, and other items from the sprint prevented wrapping up this work.
+
+Mozilla VPN epic turned out to be more or less some bugfixing. On the other hand, some good conversations started for [does-firefox-start test before publishing updates](https://bugzilla.mozilla.org/show_bug.cgi?id=587344).
+
+Interruptduty was quite busy given 86.0 release, a few dot releases for Mozilla VPN and some LDAP issues affecting some systems in Firefox CI tooling.
+
+OSX R8 Migration went smoothly, all sprint tickets were completed!
+
+BitBar capacity planning was completed as well!
+
+For Datacenter migration we made some good progress on signers but there still is work to be done for the testers.
+
+System addons Balrog went well. The planning seeds we planted in Sprint 3 sprouted, looking forward to see how the proposal goes forward.
+
+RelEng for Mozilla went very well. Plenty of interviews completed lead to a great deal of data that defined a good first proposal.
+
 ## Feedback
