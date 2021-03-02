@@ -4,6 +4,7 @@ At the beginning of 2021, our team headcount decreased. With two previous iterat
 the third was aimed at planning, maintaining and improving our systems self-serve.
 
 # Details
+**Product Owner**:
 - geckoview/android-components cleanup: aki
 - automate mac signer maintenance: bhearsum
 - password rotations:
@@ -11,6 +12,7 @@ the third was aimed at planning, maintaining and improving our systems self-serv
 - interruptduty:
 - greening-up tests: jmaher
 - releng 2021 planning:
+**Scrum Master**: aki + team
 
 ## Goal
 

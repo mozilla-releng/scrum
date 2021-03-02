@@ -1,7 +1,7 @@
 # Releng team sprints
 
 * Sprint 4: **Loose ends and sprint mechanics**: February 08 - February 26, 2021
-  * [Project report](TODO)
+  * [Project report](https://jira.mozilla.com/secure/RapidBoard.jspa?rapidView=679&projectKey=RELENG&view=reporting&chart=sprintRetrospective&sprint=980)
   * [Review](./20210226-loose-ends-sprint-mechanics/sprint-review.md)
   * [Retrospective](./20210226-loose-ends-sprint-mechanics/sprint-retrospective.md)
 * Sprint 3: **Planning, Maintenance, and Self-serve**: January 11 - January 29, 2021
