@@ -1,14 +1,14 @@
 # Sprint Review - Loose ends and sprint mechanics, February 08, 2021 - February 26, 2021
 
 Sprint 4 added some momentum to our sprint working model. Some seeds we have planted
-in sprin3 were pending sprouting so we dedicated the time for this sprint to
+in sprint 3 were unfinished, so we dedicated the time for this sprint to
 close some loose ends and put some things behind us in the Done sections.
 
 # Details
 **Product Owner**:
 - automate mac signer maintenance: bhearsum
 - activedata eol: mtabara
-- password rotations:
+- password rotations: aki
 - pushhealth: sclements
 - mozillavpn automated signing: bhearsum
 - interruptduty:
@@ -23,7 +23,7 @@ close some loose ends and put some things behind us in the Done sections.
 
 ## Goal
 
-While working on the 2021 releng roadmap, for sprint 4 we buckled together a couple
+While working on the 2021 releng roadmap, for sprint 4 we cobbled together a couple
 of loose ends items to help us close some chapters. First, we wanted to make some
 more progress on automating mac signer maintanence to help us streamline our automation
 and deployment process to make it consistent. ActiveData has been broken for quite some time
